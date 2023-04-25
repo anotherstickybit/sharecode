@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import ru.puppeteers.sharecode.api.request.FormatResponse;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -13,7 +12,7 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class PasteCreateResponse {
+public class PasteResponse {
 
     private UUID id;
     private String data;

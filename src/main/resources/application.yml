@@ -1,1 +1,13 @@
-
+server:
+  port: 8081
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/sharecode
+      database: sharecode
+      username: mongo_admin
+      password: mongo
+      uuid-representation: standard
+mongock:
+  migration-scan-package:
+    - ru.puppeteers.sharecode.config.dbmigrations

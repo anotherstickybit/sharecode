@@ -1,4 +1,4 @@
-package ru.puppeteers.sharecode.api.request;
+package ru.puppeteers.sharecode.api.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

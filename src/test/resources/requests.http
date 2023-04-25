@@ -1,0 +1,11 @@
+GET http://localhost:8081/format/all
+
+###
+POST http://localhost:8081/paste/new
+Content-Type: application/json
+
+{
+  "data": "@Repository\npublic interface FormatRepository extends JpaRepository<FormatEntity, Integer> {\n\t\t}",
+  "formatTypeId": "6448121b6ddc363500e0cf97",
+  "expireDate": "2023-04-26T20:11:43.143558"
+}

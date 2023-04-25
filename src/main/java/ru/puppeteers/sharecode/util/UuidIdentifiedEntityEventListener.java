@@ -1,4 +1,4 @@
-package ru.puppeteers.sharecode.config;
+package ru.puppeteers.sharecode.util;
 
 import org.springframework.data.mongodb.core.mapping.event.AbstractMongoEventListener;
 import org.springframework.data.mongodb.core.mapping.event.BeforeConvertEvent;
