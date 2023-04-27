@@ -12,6 +12,6 @@ import org.bson.types.ObjectId;
 @AllArgsConstructor
 public class FormatResponse {
 
-    private ObjectId id;
+    private String id;
     private String formatType;
 }

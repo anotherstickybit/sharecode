@@ -8,3 +8,5 @@ db.createUser({
   pwd: 'mongo',
   roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
 });
+
+db.paste.createIndex({ expireDate: 1 }, { expireAfterSeconds: 0 })

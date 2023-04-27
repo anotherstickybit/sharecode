@@ -8,6 +8,7 @@ import ru.puppeteers.sharecode.entity.FormatEntity;
 @Mapper(componentModel = "spring")
 public interface FormatMapper {
 
+    @Mapping(target = "id", expression = "java(entity.getId().toHexString())")
     @Mapping(target = "formatType", source = "formatType")
     FormatResponse toResponse(FormatEntity entity);
 }

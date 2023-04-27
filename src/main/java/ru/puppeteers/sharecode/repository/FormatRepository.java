@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 import ru.puppeteers.sharecode.entity.FormatEntity;
 
 @Repository
-public interface FormatRepository extends MongoRepository<FormatEntity, Integer> {
+public interface FormatRepository extends MongoRepository<FormatEntity, String> {
 }

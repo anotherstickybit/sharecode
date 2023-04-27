@@ -14,6 +14,6 @@ import java.time.LocalDateTime;
 public class PasteCreateRequest {
 
     private String data;
-    private Integer formatTypeId;
+    private String formatTypeId;
     private LocalDateTime expireDate;
 }
