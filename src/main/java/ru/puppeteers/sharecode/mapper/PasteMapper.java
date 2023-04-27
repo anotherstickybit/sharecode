@@ -15,11 +15,14 @@ public abstract class PasteMapper {
 
     @Autowired
     private FormatRepository formatRepository;
+    @Autowired
+    private FormatMapper formatMapper;
 
     @Mapping(target = "data", source = "data")
     @Mapping(target = "format",
             expression = "java(getFormatRepository().findById(request.getFormatTypeId()).orElseThrow())")
     public abstract PasteEntity toEntity(PasteCreateRequest request);
 
+    @Mapping(target = "format", expression = "java(getFormatMapper().toResponse(entity.getFormat()))")
     public abstract PasteResponse toResponse(PasteEntity entity);
 }
