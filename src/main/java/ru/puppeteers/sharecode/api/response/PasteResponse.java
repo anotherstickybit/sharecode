@@ -17,6 +17,6 @@ public class PasteResponse {
     private UUID id;
     private String data;
     private FormatResponse format;
-    private LocalDateTime createDate;
+    private LocalDateTime creationDate;
     private LocalDateTime expireDate;
 }

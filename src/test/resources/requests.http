@@ -6,6 +6,9 @@ Content-Type: application/json
 
 {
   "data": "@Repository\npublic interface FormatRepository extends JpaRepository<FormatEntity, Integer> {\n\t\t}",
-  "formatTypeId": "644ab384b10efa2ebd8b7b7f",
-  "expireDate": "2023-04-27T20:42:43.143558"
+  "formatTypeId": "64516080b7083c018f070898",
+  "expireDate": "2024-04-27T20:42:43.143558"
 }
+
+###
+GET http://localhost:8081/paste/e2f423a7-2cda-4cf8-a85b-063bc135fce4

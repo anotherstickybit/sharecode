@@ -15,6 +15,5 @@ public class PasteEntity extends UuidIdentifiedEntity {
 
     private String data;
     private FormatEntity format;
-    private LocalDateTime creationDate;
     private LocalDateTime expireDate;
 }

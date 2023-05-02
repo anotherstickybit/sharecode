@@ -9,6 +9,7 @@ import ru.puppeteers.sharecode.mapper.PasteMapper;
 import ru.puppeteers.sharecode.repository.PasteRepository;
 
 import java.util.List;
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -19,6 +20,10 @@ public class PasteService {
 
     public List<PasteResponse> getAll() {
         return pasteRepository.findAll().stream().map(pasteMapper::toResponse).toList();
+    }
+
+    public PasteResponse findById(UUID id) {
+        return pasteRepository.findById(id).map(pasteMapper::toResponse).orElseThrow();
     }
 
     public PasteResponse create(PasteCreateRequest request) {
