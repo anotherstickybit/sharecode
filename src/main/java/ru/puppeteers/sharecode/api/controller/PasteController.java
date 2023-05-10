@@ -9,7 +9,6 @@ import ru.puppeteers.sharecode.service.PasteService;
 import java.util.UUID;
 
 @RestController
-@CrossOrigin
 @RequestMapping("/paste")
 @RequiredArgsConstructor
 public class PasteController {
