@@ -15,7 +15,9 @@ class ShareCodeApplicationTests {
     @Test
     void test() {
 //        System.out.println(LocalDateTime.now());
-        System.out.println(UUID.randomUUID().toString());
+        System.out.println(UUID.randomUUID());
+
+        System.out.println(LocalDateTime.parse("2023-05-07T10:04:32.032"));
     }
 
 }
