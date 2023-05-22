@@ -20,4 +20,11 @@ public class FormatController {
     public List<FormatResponse> getAll() {
         return formatService.getAll();
     }
+    // тут надо вроде как еще один маппер:
+    //  public List<FormatResponse> getAll2() {
+    //        return formatService.getAll2();
+    //    }
+
 }
+
+
