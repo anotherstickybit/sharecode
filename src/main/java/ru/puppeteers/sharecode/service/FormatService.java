@@ -13,7 +13,6 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-
 public class FormatService {
 
     private final FormatRepository formatRepository;
