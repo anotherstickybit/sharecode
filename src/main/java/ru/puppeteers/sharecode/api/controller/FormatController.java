@@ -20,4 +20,7 @@ public class FormatController {
     public List<FormatResponse> getAll() {
         return formatService.getAll();
     }
+
 }
+
+
