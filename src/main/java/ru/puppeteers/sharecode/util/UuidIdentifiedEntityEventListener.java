@@ -4,6 +4,7 @@ import org.springframework.data.mongodb.core.mapping.event.AbstractMongoEventLis
 import org.springframework.data.mongodb.core.mapping.event.BeforeConvertEvent;
 import ru.puppeteers.sharecode.entity.UuidIdentifiedEntity;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 public class UuidIdentifiedEntityEventListener extends AbstractMongoEventListener<UuidIdentifiedEntity> {
@@ -15,6 +16,10 @@ public class UuidIdentifiedEntityEventListener extends AbstractMongoEventListene
 
         if (entity.getId() == null) {
             entity.setId(UUID.randomUUID());
+        }
+
+        if (entity.getCreationDate() == null) {
+            entity.setCreatedDate(LocalDateTime.now());
         }
     }
 }
